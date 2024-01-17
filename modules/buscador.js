@@ -1,6 +1,5 @@
 // src/modules/buscador.js
 
-// Variables y constantes del módulo
 const formBusqueda = document.querySelector('#form-busqueda')
 const cajaBusqueda = document.querySelector('#caja-busqueda')
 const resultadoBusqueda = document.querySelector('#resultado-busqueda')
@@ -9,7 +8,6 @@ let keyword = ''
 let page = 1
 const accessKey = 'ldlRt8OKYLrVkbKGHsueVMYWWNH6oyqkHNFMn7rwfEQ'
 
-// Función para buscar imágenes
 async function buscarImagenes() {
   keyword = cajaBusqueda.value
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}`
@@ -35,7 +33,6 @@ async function buscarImagenes() {
   })
 }
 
-// Funciones para agregar eventos a los elementos
 function agregarEventos() {
   formBusqueda.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -49,5 +46,4 @@ function agregarEventos() {
   })
 }
 
-// Exportar las funciones y/o variables que se necesiten fuera del módulo
 export { buscarImagenes, agregarEventos }

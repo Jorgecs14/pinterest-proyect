@@ -137,12 +137,12 @@ header form input {
 
 @media (min-width: 1024px) {
   #resultado-busqueda {
-    column-count: 4; /* Dos columnas */
+    column-count: 4; 
     width: 100%;
-    height: auto; /* Altura automática para acomodar el contenido */
+    height: auto; /
   }
 
-  /* Mantener el header y sus elementos en disposición horizontal */
+  
   ul {
     flex-direction: row;
     flex-wrap: wrap;
@@ -161,38 +161,34 @@ header form input {
   }
 }
 
-/* Media query para tablets y dispositivos más pequeños (menores a 550px) */
 @media (max-width: 550px) {
-  /* Mantener el header en disposición horizontal */
   ul {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  /* Ajustes de cuadrícula para pantallas más pequeñas */
   #resultado-busqueda {
-    column-count: 1; /* Una sola columna para imágenes */
+    column-count: 1; 
   }
 }
 
-/* Media query para móviles (pantallas menores a 480px) */
 @media (max-width: 480px) {
   header {
     padding: 0.5rem;
   }
 
   ul {
-    gap: 5px; /* Espacio reducido entre elementos del menú */
+    gap: 5px; 
   }
 
   header a:hover,
   .message-icon:hover,
   .notification-icon:hover {
-    padding: 2px; /* Padding reducido para los elementos interactivos */
+    padding: 2px;
   }
 
   #mostrar-mas {
-    padding: 5px; /* Padding reducido para el botón */
-    font-size: 14px; /* Tamaño de fuente más pequeño para el botón */
+    padding: 5px; 
+    font-size: 14px; 
   }
 }

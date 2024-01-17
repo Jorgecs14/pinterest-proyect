@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/pinterest/public/pinterest.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="main.js"></script>
+    <title>Pinterest</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li>
+              <img src="/pinterest.svg" alt="Logotipo" class="logo-button" />
+            </li>
+            <li>
+              <a href="#" class="start-button">Inicio</a>
+            </li>
+            <li>
+              <a href="#" class="today-button">Hoy</a>
+            </li>
+            <li>
+              <a href="#" class="create-button">Crear</a>
+            </li>
+            <li class="search-container">
+              <form action="" id="form-busqueda">
+                <input
+                  type="text"
+                  id="caja-busqueda"
+                  placeholder="🔎Buscar..."
+                />
+                <button class="Buscador">Buscar</button>
+              </form>
+            </li>
+            <li class="notification-container">
+              <button class="notification-icon">🔔</button>
+            </li>
+            <li class="message-container">
+              <button class="message-icon">✉️</button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+
+    <div id="resultado-busqueda"></div>
+
+    <button id="mostrar-mas">Mostrar más</button>
+  </body>
+</html>
